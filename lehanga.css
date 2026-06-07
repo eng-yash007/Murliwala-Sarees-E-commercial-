@@ -328,7 +328,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('lehangamain.jpeg') no-repeat center center/cover;
+    background: url('assets/lehangamain.jpeg') no-repeat center center/cover;
     z-index: -1;
     animation: herolax 10s infinite linear;
 }

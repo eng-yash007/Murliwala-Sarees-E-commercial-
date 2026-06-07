@@ -23,7 +23,7 @@ body, html {
 /* Left Section */
 .auth-left {
     flex: 1;
-    background-image: url('login.jpeg');
+    background-image: url('assets/login.jpeg');
     background-size: cover;
     background-position: center;
     padding: 50px;
@@ -83,7 +83,7 @@ body, html {
 /* Right Section */
 .auth-right {
     flex: 1;
-    background-image: url('lehangamain.jpeg');
+    background-image: url('assets/lehangamain.jpeg');
     background-size: cover;
     background-position: center;
     padding: 50px;
