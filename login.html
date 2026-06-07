@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murliwala - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+    <main>
+    <div class="auth-page">
+        <div class="auth-left">
+            <div class="brand">
+                <h1>Murliwala</h1>
+            </div>
+            <div class="tagline">
+                <h2 class="typewriter"></h2> <!-- Changed text -->
+            </div>
+        </div>
+        <div class="auth-right">
+            <h2>Start Your Journey</h2> <!-- Changed text -->
+            <form id="auth-form" onsubmit="return validateForm();">
+                <input type="text" id="email" placeholder="Enter your email" required />
+                <input type="password" id="password" placeholder="Enter your password" required />
+                <div class="auth-buttons">
+                    <button type="submit" class="btn-login">Log In</button>
+                    <button type="button" class="btn-signup">Sign Up</button>
+                </div>
+            </form>
+            <p class="try"style="color: #ff5722";>Discover our collection today!</p> <!-- Changed text -->
+            <footer>
+                <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
+            </footer>
+        </div>
+    </div>
+</main>
+    <script src="login.js"></script>
+</body>
+</html>

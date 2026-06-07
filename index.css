@@ -1,0 +1,350 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #fff4e6, #f8f3f3);
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease;
+    border-bottom: 2px solid #ff5722 ;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 0.7;
+    min-width: 150px;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    color: #ff5722;
+    font-family: 'Papyrus', Fantasy;
+    margin: 0;
+}
+
+header .logo .logo-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 45%;
+    object-fit: cover;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
+    border: 1px #ff5722 solid;
+}
+
+.main-nav {
+    flex: 2;
+    min-width: 300px;
+    
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main-nav ul li {
+    position: relative;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.main-nav ul li a:hover {
+    color: #fff;
+    background-color: #ff5722;
+    transform: translateY(-3px);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 27px;
+    left: 0;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    min-width: 200px;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.main-nav ul li:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li a {
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #ff5722;
+    transform: translateX(5px);
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+    min-width: 150px;
+}
+
+.header-icons .icon {
+    font-size: 26px;
+    color: #ff5722;
+    transition: all 0.3s ease;
+}
+
+.header-icons .icon:hover {
+    color: #e64a19;
+    transform: translateY(-5px);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ff5722;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+    padding: 0 10px;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+.search-input {
+    padding: 8px 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: none;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    width: 300px;
+    outline: none;
+}
+
+.search-icon {
+    font-size: 18px;
+    color: #ff5722;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+    color: #e64a19;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+    color: #666;
+}
+
+.hero .btn {
+    background: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.hero .btn:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #d84315;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    border-top: 3px solid #ff5722;
+    position: relative;
+}
+
+.footer-logo h2 {
+    font-size: 1.8rem;
+    color: #ff5722;
+    margin: 0 0 10px 0;
+    font-family: 'Papyrus', Fantasy;
+    letter-spacing: 10px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 1px;
+}
+
+.footer-socials .social-icon {
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-socials .social-icon:hover {
+    color: #ff5722;
+    transform: translateY(-5px);
+}
+
+.footer-note p {
+    font-size: 14px;
+    color: #e0e0e0;
+    margin-top: 15px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2.5px;
+}
+
+@media (max-width: 760px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-socials {
+        gap: 15px;
+    }
+
+    .footer-logo h2 {
+        font-size: 1.8rem;
+    }
+}
+
+.video-section {
+    position: relative;
+    height: 90vh;
+    width: auto;
+    overflow: hidden;
+}
+
+.video-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 5px 5px 50px #030303;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background: rgba(14, 1, 1, 0.5);
+    padding: 20px 40px;
+    border-radius: 15px;
+    animation: fadeIn 5s ease-in-out;
+}
+
+.video-overlay .highlight {
+    color: #ffb74d;
+    font-size: 1.9rem;
+    font-family: 'Papyrus', Fantasy;
+}
+
+.video-overlay h2 {
+    font-size: 2.7rem;
+    margin: 0 0 10px;
+    color: #f09b1b;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: lighter;
+}
+
+.video-overlay p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e0d4d4;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.scrolled-header {
+    transform: translateY(-100%);
+}
